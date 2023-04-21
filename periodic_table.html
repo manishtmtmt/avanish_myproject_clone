@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Periodic Table</title>
+    <style>
+        #container {
+            height: 700px;
+            width: 90%;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        
+        .text {
+            text-align: center;
+            text-transform: uppercase;
+            font-size: 20px;
+        }
+        .box {
+            height: 70%;
+            width: 98%;
+            margin: auto;
+            display: flex;
+            gap: 6px;
+        }
+        .leftbox {
+            height: 90%;
+            width: 22% ;
+            display: flex;
+            gap: 4px;
+        }
+        .firstCol {
+            height: 100%;
+            width: 30%;
+            text-align: center;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            padding: 3px 0px 0px 3px;
+        }
+        .fcb {
+           width: 100%;
+            height: 50px;
+            background-color: #89A02C;
+            color: white;
+        }
+        .fcb1 {
+            
+            align-items: center;
+            background-color: #AD090B;
+        }
+        .secondCol {
+            height: 100%;
+            width: 30%;
+            text-align: center;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            padding: 3px 0px 0px 3px;
+        }
+        .scb {
+            width: 100%;
+            height: 50px;
+            background-color: #FF5555;
+            color: black;
+            text-align: center;
+        }
+        .scb1 {
+            text-align: center;
+            background-color: white;
+        }
+        .thirdCol {
+            height: 100%;
+            width: 30%;
+            text-align: center;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            padding: 3px 0px 0px 3px;   
+        }
+        .tcb {
+            width: 100%;
+            height: 50px;
+            background-color: white;
+            color: white;
+        }
+        .tcb1 {
+            background-color: #FFE6D5;
+            border: 5px solid black;
+            box-sizing: border-box;
+        }
+        .middlebox {
+            height: 90%;
+            width: 66% ;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .middlebox1{
+            height: 42%;
+        }
+        .middlebox2 {
+            height: 56%;
+            display: flex;
+            gap: 4px;
+        }
+        .mb1f {
+            height: 95%;
+            width: 35%;
+            margin-top: 5px;
+            background-color: #89A02C;
+        }
+        .num {
+            text-align: right;
+            padding-right: 10px;
+        }
+        .heading {
+            font-size: 30px;
+            padding-left: 10px;
+        }
+        .tex {
+            padding-left: 10px;
+        }
+        .mdc {
+            width: 30%;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .mdc1 {
+            height: 30%;
+            background-color: #0000FE;
+        }
+        .rightbox {
+            width: 44%;
+            height: 90%;
+            display: flex;
+            gap: 4px;
+            padding-top: 2px;
+        }
+        .rbc {
+            width: 30%;
+            display: flex;
+            gap: 10px;
+            flex-direction: column
+        }
+        .rbc1 {
+            height: 29%;
+           
+            background-color: #0000FE;
+        }
+        .w {
+            background-color: white;
+        }
+        .y {
+            background-color: yellow;
+        }
+        .b{
+            background-color: #6d535e;
+        }
+        .g{
+            background-color: #89A02C;
+        }
+        .o{
+            background-color: #ff0066;
+        }
+        .v{
+            background-color: #aa0087;
+        }
+        .lo{
+            background-color: #fe6600;
+        }
+        .bottombox {
+            height: 80%;
+            margin-top: -20px;
+        }
+        .bottombox1 {
+            height:  50%;
+            width: 50%;
+            margin : auto;
+            display: flex;
+            gap: 0px;
+        }
+        .bbc {
+            
+            height: 100%;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 0px;
+        }
+        .bbc1 {
+            height: 50%;
+            background-color: #47582e;
+            border: 1px solid #8eaf5c;
+            color: white;
+        }
+        .bbc2 {
+            height: 50%;
+            background-color: #95bc5f;
+            border: 1px solid #8eaf5c;
+        }
+        .t1 {
+            
+            align-items: center;
+        }
+        .t2{
+            text-align: right ;
+        }
+        
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h5 class="text">The periodic table of elements </h5>
+       
+        <div class="box">
+            <div class="leftbox">
+                <div class="firstCol">
+                    <div class="fcb fcb1">H</div>
+                    <div class="fcb"></div>
+                    <div class="fcb"></div>
+                    <div class="fcb"></div>
+                    <div class="fcb"></div>
+                    <div class="fcb"></div>
+                    <div class="fcb"></div>
+                </div>
+    
+                <div class="secondCol">
+                    <div class="scb scb1"></div>
+                    <div class="scb">4</div>
+                    <div class="scb">12</div>
+                    <div class="scb">20</div>
+                    <div class="scb">38</div>
+                    <div class="scb">56</div>
+                    <div class="scb">88</div>
+                </div>
+
+                <div class="thirdCol">
+                    <div class="tcb"></div>
+                    <div class="tcb"></div>
+                    <div class="tcb"></div>
+                    <div class="tcb"></div>
+                    <div class="tcb"></div>
+                    <div class="tcb tcb1"></div>
+                    <div class="tcb tcb1"></div>
+                </div>
+            </div>
+
+            <div class="middlebox">
+                <div class="middlebox1">
+                    <div class="mb1f">
+                        <p class="num">14</p>
+                        <h3 class="heading">Si</h3>
+                        <p class="tex">Silicon</p>
+                    </div>
+                </div>
+                <div class="middlebox2">
+                    <div class="mdc">
+                        <div class="mdc1"></div>
+                        <div class="mdc1"></div>
+                        <div class="mdc1"></div>
+                        <div class="mdc1"></div>
+                    </div>
+                    <div class="mdc">
+                        <div class="mdc1"></div>
+                        <div class="mdc1"></div>
+                        <div class="mdc1"></div>
+                        <div class="mdc1"></div>
+                    </div>
+                    <div class="mdc">
+                        <div class="mdc1"></div>
+                        <div class="mdc1"></div>
+                        <div class="mdc1"></div>
+                        <div class="mdc1"></div>
+                    </div>
+                    <div class="mdc">
+                        <div class="mdc1"></div>
+                        <div class="mdc1"></div>
+                        <div class="mdc1"></div>
+                        <div class="mdc1"></div>
+                    </div>
+                    <div class="mdc">
+                        <div class="mdc1"></div>
+                        <div class="mdc1"></div>
+                        <div class="mdc1"></div>
+                        <div class="mdc1"></div>
+                    </div>
+                    <div class="mdc">
+                        <div class="mdc1"></div>
+                        <div class="mdc1"></div>
+                        <div class="mdc1"></div>
+                        <div class="mdc1"></div>
+                    </div>
+                    <div class="mdc">
+                        <div class="mdc1"></div>
+                        <div class="mdc1"></div>
+                        <div class="mdc1"></div>
+                        <div class="mdc1"></div>
+                    </div>
+                    <div class="mdc">
+                        <div class="mdc1"></div>
+                        <div class="mdc1"></div>
+                        <div class="mdc1"></div>
+                        <div class="mdc1"></div>
+                    </div>
+                    <div class="mdc">
+                        <div class="mdc1"></div>
+                        <div class="mdc1"></div>
+                        <div class="mdc1"></div>
+                        <div class="mdc1"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="rightbox">
+                <div class="rbc">
+                    <div class="rbc1 w"></div>
+                    <div class="rbc1 v"></div>
+                    <div class="rbc1 lo"></div>
+                    <div class="rbc1 lo"></div>
+                    <div class="rbc1 lo"></div>
+                    <div class="rbc1 lo"></div>
+                    <div class="rbc1 b"></div>
+                </div>
+                <div class="rbc">
+                    <div class="rbc1 w"></div>
+                    <div class="rbc1 g"></div>
+                    <div class="rbc1 v"></div>
+                    <div class="rbc1 v"></div>
+                    <div class="rbc1 lo"></div>
+                    <div class="rbc1 lo"></div>
+                    <div class="rbc1 b"></div>
+                </div>
+                <div class="rbc">
+                    <div class="rbc1 w"></div>
+                    <div class="rbc1 g"></div>
+                    <div class="rbc1 g"></div>
+                    <div class="rbc1 v"></div>
+                    <div class="rbc1 v"></div>
+                    <div class="rbc1 lo"></div>
+                    <div class="rbc1 b"></div>
+                </div>
+                <div class="rbc">
+                    <div class="rbc1 w"></div>
+                    <div class="rbc1 g"></div>
+                    <div class="rbc1 g"></div>
+                    <div class="rbc1 g"></div>
+                    <div class="rbc1 v"></div>
+                    <div class="rbc1 v"></div>
+                    <div class="rbc1 b"></div>
+                </div>
+                <div class="rbc">
+                    <div class="rbc1 w"></div>
+                    <div class="rbc1 o"></div>
+                    <div class="rbc1 o"></div>
+                    <div class="rbc1 o"></div>
+                    <div class="rbc1 o"></div>
+                    <div class="rbc1 o"></div>
+                    <div class="rbc1 b"></div>
+                </div>
+                <div class="rbc">
+                    <div class="rbc1 y"></div>
+                    <div class="rbc1 y"></div>
+                    <div class="rbc1 y"></div>
+                    <div class="rbc1 y"></div>
+                    <div class="rbc1 y"></div>
+                    <div class="rbc1 y"></div>
+                    <div class="rbc1 b"></div>
+                </div>
+            </div>
+            
+        </div>
+        <div class="bottombox">
+            <div class="bottombox1">
+                <div class="bbc">
+                    <div class="bbc1">La</div>
+                    <div class="bbc2"></div>
+                </div>
+                <div class="bbc">
+                    <div class="bbc1"></div>
+                    <div class="bbc2"></div>
+                </div>
+                <div class="bbc">
+                    <div class="bbc1"></div>
+                    <div class="bbc2"></div>
+                </div>
+                <div class="bbc">
+                    <div class="bbc1"></div>
+                    <div class="bbc2"></div>
+                </div>
+                <div class="bbc">
+                    <div class="bbc1"></div>
+                    <div class="bbc2"></div>
+                </div>
+                <div class="bbc">
+                    <div class="bbc1"></div>
+                    <div class="bbc2"></div>
+                </div>
+                <div class="bbc">
+                    <div class="bbc1"></div>
+                    <div class="bbc2 t1">Am</div>
+                </div>
+                <div class="bbc">
+                    <div class="bbc1"></div>
+                    <div class="bbc2"></div>
+                </div>
+                <div class="bbc">
+                    <div class="bbc1"></div>
+                    <div class="bbc2"></div>
+                </div>
+                <div class="bbc">
+                    <div class="bbc1"></div>
+                    <div class="bbc2"></div>
+                </div>
+                <div class="bbc">
+                    <div class="bbc1"></div>
+                    <div class="bbc2"></div>
+                </div>
+                <div class="bbc">
+                    <div class="bbc1"></div>
+                    <div class="bbc2"></div>
+                </div>
+                <div class="bbc">
+                    <div class="bbc1"></div>
+                    <div class="bbc2"></div>
+                </div>
+                <div class="bbc">
+                    <div class="bbc1"></div>
+                    <div class="bbc2 t2">No</div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</body>
+</html>
